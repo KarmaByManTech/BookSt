@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Categories - Book Haven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><i class="fas fa-book-open"></i> Book Haven</div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="category.html" class="active"><i class="fas fa-th-large"></i> Categories</a>
+            <a href="Login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="Register.html"><i class="fas fa-user-plus"></i> Register</a>
+        </nav>
+    </header>
+    <section class="category-hero">
+        <h1>Book Categories</h1>
+        <p>Browse books by your favorite genre, language, or type!</p>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for books or categories...">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+    </section>
+    <main>
+        <div class="category-list" id="categoryList">
+            <!-- Categories rendered here -->
+        </div>
+        <div class="books-grid" id="booksGrid">
+            <!-- Book cards rendered here -->
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 <span class="footer-logo"><i class="fas fa-book-open"></i> Book Haven</span>. All rights reserved.
+    </footer>
+    <script src="category.js"></script>
+</body>
+</html>
