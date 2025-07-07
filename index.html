@@ -4,36 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Book store</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">📚 Book Haven</div>
+        <div class="logo"><i class="fas fa-book-open"></i> Book Haven</div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Books</a>
-            <a href="#">Categories</a>
-            <a href="Login.html">Login</a>
-            <a href="Register.html">Register</a>
+            <a href="#"><i class="fas fa-home"></i><span> Home</span></a>
+            <a href="#"><i class="fas fa-book"></i><span> Books</span></a>
+            <a href="#"><i class="fas fa-th-large"></i><span> Categories</span></a>
+            <a href="Login.html"><i class="fas fa-sign-in-alt"></i><span> Login</span></a>
+            <a href="Register.html"><i class="fas fa-user-plus"></i><span> Register</span></a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
-            <h1>Welcome to Online Bookstore</h1>
-            <p>Find your Favourate Book in unbeatable low price in this Onlin Book store.</p>
+            <h1>Welcome to <span class="highlight">Book Haven</span></h1>
+            <p>Find your favorite book at unbeatable prices and enjoy a seamless shopping experience.</p>
             <div class="buttons">
-                <a href="#" class="btn">Browse Books</a>
-                <a href="#" class="btn login">Login</a>
+                <a href="#" class="btn"><i class="fas fa-search"></i> Browse Books</a>
+                <a href="Login.html" class="btn login"><i class="fas fa-sign-in-alt"></i> Login</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        &copy; 2025 Book Haven. All rights reserved.
-    </footer>
-</body>
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-shipping-fast fa-2x"></i>
+            <h3>Fast Delivery</h3>
+            <p>Get your books delivered to your doorstep quickly and safely.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-tags fa-2x"></i>
+            <h3>Best Prices</h3>
+            <p>We offer the best prices for all genres and collections.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-star fa-2x"></i>
+            <h3>Highly Rated</h3>
+            <p>Thousands of happy readers trust our service and selection.</p>
+        </div>
+    </section>
 
+    <footer>
+        &copy; 2025 <span class="footer-logo"><i class="fas fa-book-open"></i> Book Haven</span>. All rights reserved.
+    </footer>
+    <button id="scrollTopBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+    <script src="main.js"></script>
+</body>
 </html>
